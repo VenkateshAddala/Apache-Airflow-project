@@ -1,0 +1,22 @@
+[2024-12-15T14:02:40.874-0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-15T14:02:40.877-0500] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: multiple_dags.task_b manual__2024-12-15T19:02:38.345796+00:00 [queued]>
+[2024-12-15T14:02:40.879-0500] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: multiple_dags.task_b manual__2024-12-15T19:02:38.345796+00:00 [queued]>
+[2024-12-15T14:02:40.879-0500] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-15T14:02:40.883-0500] {taskinstance.py:2889} INFO - Executing <Task(BashOperator): task_b> on 2024-12-15 19:02:38.345796+00:00
+[2024-12-15T14:02:40.885-0500] {standard_task_runner.py:72} INFO - Started process 35307 to run task
+[2024-12-15T14:02:40.888-0500] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'multiple_dags', 'task_b', 'manual__2024-12-15T19:02:38.345796+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/multiple_dags.py', '--cfg-path', '/var/folders/jw/j912b4gd5xj0c7j8p3syth7r0000gn/T/tmpb24ejz7w']
+[2024-12-15T14:02:40.889-0500] {standard_task_runner.py:105} INFO - Job 44: Subtask task_b
+[2024-12-15T14:02:40.903-0500] {task_command.py:467} INFO - Running <TaskInstance: multiple_dags.task_b manual__2024-12-15T19:02:38.345796+00:00 [running]> on host mac-4031.lan
+[2024-12-15T14:02:40.922-0500] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='venkatesh' AIRFLOW_CTX_DAG_ID='multiple_dags' AIRFLOW_CTX_TASK_ID='task_b' AIRFLOW_CTX_EXECUTION_DATE='2024-12-15T19:02:38.345796+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-15T19:02:38.345796+00:00'
+[2024-12-15T14:02:40.922-0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-15T14:02:40.927-0500] {subprocess.py:78} INFO - Tmp dir root location: /var/folders/jw/j912b4gd5xj0c7j8p3syth7r0000gn/T
+[2024-12-15T14:02:40.928-0500] {subprocess.py:88} INFO - Running command: ['/bin/bash', 'tmps_b2vwzy.sh']
+[2024-12-15T14:02:40.931-0500] {subprocess.py:99} INFO - Output:
+[2024-12-15T14:02:40.934-0500] {subprocess.py:106} INFO - task_B has started
+[2024-12-15T14:02:45.943-0500] {subprocess.py:110} INFO - Command exited with return code 99
+[2024-12-15T14:02:45.947-0500] {taskinstance.py:301} INFO - Bash command returned exit code 99. Skipping.
+[2024-12-15T14:02:45.963-0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-15T14:02:45.965-0500] {taskinstance.py:352} INFO - Marking task as SKIPPED. dag_id=multiple_dags, task_id=task_b, run_id=manual__2024-12-15T19:02:38.345796+00:00, execution_date=20241215T190238, start_date=20241215T190240, end_date=20241215T190245
+[2024-12-15T14:02:45.997-0500] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-15T14:02:46.010-0500] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-15T14:02:46.013-0500] {local_task_job_runner.py:245} INFO - ::endgroup::

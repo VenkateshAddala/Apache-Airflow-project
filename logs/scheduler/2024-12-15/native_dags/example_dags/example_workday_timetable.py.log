@@ -1,0 +1,116 @@
+[2024-12-14T20:42:44.764-0500] {processor.py:186} INFO - Started process (PID=8184) to work on /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:42:44.764-0500] {processor.py:914} INFO - Processing file /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py for tasks to queue
+[2024-12-14T20:42:44.765-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:42:44.765-0500] {dagbag.py:588} INFO - Filling up the DagBag from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:42:44.766-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:42:44.765-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:42:44.767-0500] {processor.py:925} INFO - DAG(s) 'example_workday_timetable' retrieved from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:42:44.820-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:42:44.820-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:42:44.856-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:42:44.856-0500] {override.py:1911} INFO - Created Permission View: can read on DAG:example_workday_timetable
+[2024-12-14T20:42:44.859-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:42:44.859-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG:example_workday_timetable
+[2024-12-14T20:42:44.861-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:42:44.860-0500] {override.py:1911} INFO - Created Permission View: can edit on DAG:example_workday_timetable
+[2024-12-14T20:42:44.863-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:42:44.863-0500] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:example_workday_timetable
+[2024-12-14T20:42:44.864-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:42:44.864-0500] {override.py:1911} INFO - Created Permission View: can read on DAG Run:example_workday_timetable
+[2024-12-14T20:42:44.866-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:42:44.866-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:example_workday_timetable
+[2024-12-14T20:42:44.868-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:42:44.868-0500] {override.py:1911} INFO - Created Permission View: can create on DAG Run:example_workday_timetable
+[2024-12-14T20:42:44.868-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:42:44.868-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-14T20:42:44.871-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:42:44.871-0500] {dag.py:3262} INFO - Creating ORM DAG for example_workday_timetable
+[2024-12-14T20:42:44.874-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:42:44.874-0500] {dag.py:4180} INFO - Setting next_dagrun for example_workday_timetable to 2021-01-01 00:00:00+00:00, run_after=2021-01-02 00:00:00+00:00
+[2024-12-14T20:42:44.879-0500] {processor.py:208} INFO - Processing /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py took 0.116 seconds
+[2024-12-14T20:44:20.225-0500] {processor.py:186} INFO - Started process (PID=8364) to work on /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:44:20.226-0500] {processor.py:914} INFO - Processing file /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py for tasks to queue
+[2024-12-14T20:44:20.226-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:44:20.226-0500] {dagbag.py:588} INFO - Filling up the DagBag from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:44:20.228-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:44:20.228-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:44:20.229-0500] {processor.py:925} INFO - DAG(s) 'example_workday_timetable' retrieved from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:44:20.282-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:44:20.281-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:44:20.289-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:44:20.289-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-14T20:44:20.295-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:44:20.295-0500] {dag.py:4180} INFO - Setting next_dagrun for example_workday_timetable to 2021-01-01 00:00:00+00:00, run_after=2021-01-02 00:00:00+00:00
+[2024-12-14T20:44:20.301-0500] {processor.py:208} INFO - Processing /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py took 0.077 seconds
+[2024-12-14T20:45:22.504-0500] {processor.py:186} INFO - Started process (PID=8475) to work on /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:45:22.506-0500] {processor.py:914} INFO - Processing file /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py for tasks to queue
+[2024-12-14T20:45:22.506-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:45:22.506-0500] {dagbag.py:588} INFO - Filling up the DagBag from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:45:22.507-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:45:22.507-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:45:22.509-0500] {processor.py:925} INFO - DAG(s) 'example_workday_timetable' retrieved from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:45:22.566-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:45:22.566-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:45:22.573-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:45:22.573-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-14T20:45:22.581-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:45:22.580-0500] {dag.py:4180} INFO - Setting next_dagrun for example_workday_timetable to 2021-01-01 00:00:00+00:00, run_after=2021-01-02 00:00:00+00:00
+[2024-12-14T20:45:22.587-0500] {processor.py:208} INFO - Processing /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py took 0.084 seconds
+[2024-12-14T20:46:26.117-0500] {processor.py:186} INFO - Started process (PID=8582) to work on /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:46:26.117-0500] {processor.py:914} INFO - Processing file /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py for tasks to queue
+[2024-12-14T20:46:26.118-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:46:26.118-0500] {dagbag.py:588} INFO - Filling up the DagBag from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:46:26.119-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:46:26.119-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:46:26.121-0500] {processor.py:925} INFO - DAG(s) 'example_workday_timetable' retrieved from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:46:26.172-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:46:26.172-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:46:26.179-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:46:26.179-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-14T20:46:26.186-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:46:26.186-0500] {dag.py:4180} INFO - Setting next_dagrun for example_workday_timetable to 2021-01-01 00:00:00+00:00, run_after=2021-01-02 00:00:00+00:00
+[2024-12-14T20:46:26.192-0500] {processor.py:208} INFO - Processing /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py took 0.076 seconds
+[2024-12-14T20:47:28.318-0500] {processor.py:186} INFO - Started process (PID=8691) to work on /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:47:28.319-0500] {processor.py:914} INFO - Processing file /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py for tasks to queue
+[2024-12-14T20:47:28.319-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:47:28.319-0500] {dagbag.py:588} INFO - Filling up the DagBag from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:47:28.320-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:47:28.320-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:47:28.322-0500] {processor.py:925} INFO - DAG(s) 'example_workday_timetable' retrieved from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:47:28.380-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:47:28.380-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:47:28.387-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:47:28.387-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-14T20:47:28.394-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:47:28.394-0500] {dag.py:4180} INFO - Setting next_dagrun for example_workday_timetable to 2021-01-01 00:00:00+00:00, run_after=2021-01-02 00:00:00+00:00
+[2024-12-14T20:47:28.400-0500] {processor.py:208} INFO - Processing /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py took 0.084 seconds
+[2024-12-14T20:48:33.538-0500] {processor.py:186} INFO - Started process (PID=8803) to work on /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:48:33.539-0500] {processor.py:914} INFO - Processing file /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py for tasks to queue
+[2024-12-14T20:48:33.539-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:48:33.539-0500] {dagbag.py:588} INFO - Filling up the DagBag from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:48:33.540-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:48:33.540-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:48:33.542-0500] {processor.py:925} INFO - DAG(s) 'example_workday_timetable' retrieved from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:48:33.591-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:48:33.591-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:48:33.598-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:48:33.598-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-14T20:48:33.604-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:48:33.604-0500] {dag.py:4180} INFO - Setting next_dagrun for example_workday_timetable to 2021-01-01 00:00:00+00:00, run_after=2021-01-02 00:00:00+00:00
+[2024-12-14T20:48:33.611-0500] {processor.py:208} INFO - Processing /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py took 0.074 seconds
+[2024-12-14T20:49:39.211-0500] {processor.py:186} INFO - Started process (PID=8909) to work on /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:49:39.211-0500] {processor.py:914} INFO - Processing file /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py for tasks to queue
+[2024-12-14T20:49:39.212-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:49:39.212-0500] {dagbag.py:588} INFO - Filling up the DagBag from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:49:39.212-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:49:39.212-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:49:39.214-0500] {processor.py:925} INFO - DAG(s) 'example_workday_timetable' retrieved from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:49:39.264-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:49:39.264-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:49:39.271-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:49:39.271-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-14T20:49:39.277-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:49:39.277-0500] {dag.py:4180} INFO - Setting next_dagrun for example_workday_timetable to 2021-01-01 00:00:00+00:00, run_after=2021-01-02 00:00:00+00:00
+[2024-12-14T20:49:39.283-0500] {processor.py:208} INFO - Processing /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py took 0.073 seconds
+[2024-12-14T20:50:44.075-0500] {processor.py:186} INFO - Started process (PID=9021) to work on /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:50:44.075-0500] {processor.py:914} INFO - Processing file /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py for tasks to queue
+[2024-12-14T20:50:44.075-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:50:44.075-0500] {dagbag.py:588} INFO - Filling up the DagBag from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:50:44.076-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:50:44.076-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:50:44.078-0500] {processor.py:925} INFO - DAG(s) 'example_workday_timetable' retrieved from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:50:44.130-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:50:44.130-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:50:44.137-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:50:44.137-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-14T20:50:44.144-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:50:44.143-0500] {dag.py:4180} INFO - Setting next_dagrun for example_workday_timetable to 2021-01-01 00:00:00+00:00, run_after=2021-01-02 00:00:00+00:00
+[2024-12-14T20:50:44.150-0500] {processor.py:208} INFO - Processing /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py took 0.076 seconds
+[2024-12-14T20:51:48.388-0500] {processor.py:186} INFO - Started process (PID=9131) to work on /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:51:48.388-0500] {processor.py:914} INFO - Processing file /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py for tasks to queue
+[2024-12-14T20:51:48.389-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:51:48.389-0500] {dagbag.py:588} INFO - Filling up the DagBag from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:51:48.389-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:51:48.389-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:51:48.391-0500] {processor.py:925} INFO - DAG(s) 'example_workday_timetable' retrieved from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:51:48.445-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:51:48.445-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:51:48.454-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:51:48.454-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-14T20:51:48.462-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:51:48.462-0500] {dag.py:4180} INFO - Setting next_dagrun for example_workday_timetable to 2021-01-01 00:00:00+00:00, run_after=2021-01-02 00:00:00+00:00
+[2024-12-14T20:51:48.470-0500] {processor.py:208} INFO - Processing /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py took 0.083 seconds
+[2024-12-14T20:52:56.067-0500] {processor.py:186} INFO - Started process (PID=9252) to work on /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:52:56.068-0500] {processor.py:914} INFO - Processing file /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py for tasks to queue
+[2024-12-14T20:52:56.068-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:52:56.068-0500] {dagbag.py:588} INFO - Filling up the DagBag from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:52:56.069-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:52:56.069-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:52:56.070-0500] {processor.py:925} INFO - DAG(s) 'example_workday_timetable' retrieved from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:52:56.120-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:52:56.120-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:52:56.127-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:52:56.127-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-14T20:52:56.134-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:52:56.133-0500] {dag.py:4180} INFO - Setting next_dagrun for example_workday_timetable to 2021-01-01 00:00:00+00:00, run_after=2021-01-02 00:00:00+00:00
+[2024-12-14T20:52:56.139-0500] {processor.py:208} INFO - Processing /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py took 0.074 seconds
+[2024-12-14T20:54:00.380-0500] {processor.py:186} INFO - Started process (PID=9380) to work on /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:54:00.381-0500] {processor.py:914} INFO - Processing file /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py for tasks to queue
+[2024-12-14T20:54:00.381-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:54:00.381-0500] {dagbag.py:588} INFO - Filling up the DagBag from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:54:00.383-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:54:00.383-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:54:00.385-0500] {processor.py:925} INFO - DAG(s) 'example_workday_timetable' retrieved from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:54:00.437-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:54:00.436-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:54:00.444-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:54:00.444-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-14T20:54:00.450-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:54:00.450-0500] {dag.py:4180} INFO - Setting next_dagrun for example_workday_timetable to 2021-01-01 00:00:00+00:00, run_after=2021-01-02 00:00:00+00:00
+[2024-12-14T20:54:00.456-0500] {processor.py:208} INFO - Processing /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py took 0.077 seconds
+[2024-12-14T20:55:05.669-0500] {processor.py:186} INFO - Started process (PID=9489) to work on /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:55:05.670-0500] {processor.py:914} INFO - Processing file /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py for tasks to queue
+[2024-12-14T20:55:05.670-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:55:05.670-0500] {dagbag.py:588} INFO - Filling up the DagBag from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:55:05.671-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:55:05.671-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:55:05.673-0500] {processor.py:925} INFO - DAG(s) 'example_workday_timetable' retrieved from /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-12-14T20:55:05.725-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:55:05.725-0500] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2024-12-14T20:55:05.732-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:55:05.732-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-14T20:55:05.738-0500] {logging_mixin.py:190} INFO - [2024-12-14T20:55:05.738-0500] {dag.py:4180} INFO - Setting next_dagrun for example_workday_timetable to 2021-01-01 00:00:00+00:00, run_after=2021-01-02 00:00:00+00:00
+[2024-12-14T20:55:05.745-0500] {processor.py:208} INFO - Processing /opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py took 0.077 seconds

@@ -1,0 +1,22 @@
+[2024-12-15T13:37:16.183-0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-15T13:37:16.186-0500] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: executing_multiple_dags.task_c manual__2024-12-15T18:37:08.955894+00:00 [queued]>
+[2024-12-15T13:37:16.188-0500] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: executing_multiple_dags.task_c manual__2024-12-15T18:37:08.955894+00:00 [queued]>
+[2024-12-15T13:37:16.189-0500] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-15T13:37:16.192-0500] {taskinstance.py:2889} INFO - Executing <Task(BashOperator): task_c> on 2024-12-15 18:37:08.955894+00:00
+[2024-12-15T13:37:16.194-0500] {standard_task_runner.py:72} INFO - Started process 28318 to run task
+[2024-12-15T13:37:16.197-0500] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'executing_multiple_dags', 'task_c', 'manual__2024-12-15T18:37:08.955894+00:00', '--job-id', '31', '--raw', '--subdir', 'DAGS_FOLDER/simple_hello_world.py', '--cfg-path', '/var/folders/jw/j912b4gd5xj0c7j8p3syth7r0000gn/T/tmp425_pfj8']
+[2024-12-15T13:37:16.198-0500] {standard_task_runner.py:105} INFO - Job 31: Subtask task_c
+[2024-12-15T13:37:16.211-0500] {task_command.py:467} INFO - Running <TaskInstance: executing_multiple_dags.task_c manual__2024-12-15T18:37:08.955894+00:00 [running]> on host mac-4031.lan
+[2024-12-15T13:37:16.231-0500] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='venkatesh' AIRFLOW_CTX_DAG_ID='executing_multiple_dags' AIRFLOW_CTX_TASK_ID='task_c' AIRFLOW_CTX_EXECUTION_DATE='2024-12-15T18:37:08.955894+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-15T18:37:08.955894+00:00'
+[2024-12-15T13:37:16.231-0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-15T13:37:16.236-0500] {subprocess.py:78} INFO - Tmp dir root location: /var/folders/jw/j912b4gd5xj0c7j8p3syth7r0000gn/T
+[2024-12-15T13:37:16.236-0500] {subprocess.py:88} INFO - Running command: ['/bin/bash', '-c', '\n        echo task_C has started\n        sleep 10\n        echo task_C has ended!!\n        ']
+[2024-12-15T13:37:16.239-0500] {subprocess.py:99} INFO - Output:
+[2024-12-15T13:37:16.242-0500] {subprocess.py:106} INFO - task_C has started
+[2024-12-15T13:37:26.251-0500] {subprocess.py:106} INFO - task_C has ended!!
+[2024-12-15T13:37:26.255-0500] {subprocess.py:110} INFO - Command exited with return code 0
+[2024-12-15T13:37:26.287-0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-15T13:37:26.289-0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=executing_multiple_dags, task_id=task_c, run_id=manual__2024-12-15T18:37:08.955894+00:00, execution_date=20241215T183708, start_date=20241215T183716, end_date=20241215T183726
+[2024-12-15T13:37:26.303-0500] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-15T13:37:26.315-0500] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-12-15T13:37:26.316-0500] {local_task_job_runner.py:245} INFO - ::endgroup::
