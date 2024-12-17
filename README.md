@@ -1,64 +1,152 @@
-Apache Airflow Project
-Overview
-This project demonstrates how to execute multiple dependent DAGs (Directed Acyclic Graphs) in Apache Airflow. Airflow is an open-source platform to programmatically author, schedule, and monitor workflows.
+# Apache Airflow Project
 
-The project is designed to:
+## Overview
 
-Showcase task dependencies.
-Demonstrate execution logs and monitoring features.
-Use BashOperator to execute basic tasks.
-Project Details
-DAG Name: executing_multiple_dags
+This project demonstrates executing **multiple dependent DAGs** in Apache Airflow. Airflow is an open-source platform to programmatically author, schedule, and monitor workflows.
 
-Tasks:
+The project highlights:
+- Task dependencies and parallel execution.
+- Task execution monitoring with logs and UI visualization.
+- Use of **BashOperator** for task execution.
 
-task_a
-task_b
-task_c
-task_d
-Task Dependency:
+---
 
-task_a triggers both task_b and task_c.
-Once task_b and task_c succeed, task_d will execute.
-DAG Visualization
-The graph view shows how the tasks are connected.
+## DAG Details
 
+- **DAG Name**: `executing_multiple_dags`
+- **Tasks**:
+    - `task_a`
+    - `task_b`
+    - `task_c`
+    - `task_d`
 
-Here, the DAG executes with the following flow:
+### Task Dependency
 
-task_a starts.
-After task_a completes, both task_b and task_c execute in parallel.
-Once task_b and task_c succeed, task_d executes.
-Task Monitoring
-You can monitor task states and logs using Airflow’s user interface.
+- `task_a` triggers both `task_b` and `task_c` in parallel.
+- After the successful execution of `task_b` and `task_c`, `task_d` executes.
 
-Task Execution States:
-Green: Success
-Red: Failed
-Yellow: Running or Retries
-Below is the task execution overview.
+---
 
+## DAG Visualization
 
-Logs Example
-You can view detailed logs for each task to debug and monitor execution. Logs for task_a are shown below.
+### Task Flow
 
+The graph view below shows the dependency structure:
 
-Sample Log Output:
+![Graph View](images/Screenshot-2024-12-15-at-1.44.07PM.png)
 
-bash
-Copy code
+---
+
+## Task Monitoring
+
+### Task Execution States
+
+- **Green**: Success
+- **Red**: Failed
+- **Yellow**: Running or Retry
+
+The task duration chart below shows task states and durations:
+
+![Task Execution Overview](images/Screenshot-2024-12-15-at-1.44.25PM.png)
+
+---
+
+## Execution Logs
+
+Detailed logs can be accessed in the Airflow UI to track task outputs and debug errors. Here is an example log from `task_a`:
+
+![Logs](images/Screenshot-2024-12-14-at-8.41.37PM.png)
+
+**Sample Log Output**:
+```bash
 INFO - task_A has started
 INFO - Task A printing 1
 INFO - Task A printing 2
 INFO - Task A printing 3
-INFO - Task A printing 4
+...
+INFO - Task A printing 10
+INFO - task_A has ended!!
+
+
+
+Here is the GitHub-compatible README.md code for your Apache Airflow project. It includes Markdown syntax and assumes the images are stored in an images folder within your repository.
+
+markdown
+Copy code
+# Apache Airflow Project
+
+## Overview
+
+This project demonstrates executing **multiple dependent DAGs** in Apache Airflow. Airflow is an open-source platform to programmatically author, schedule, and monitor workflows.
+
+The project highlights:
+- Task dependencies and parallel execution.
+- Task execution monitoring with logs and UI visualization.
+- Use of **BashOperator** for task execution.
+
+---
+
+## DAG Details
+
+- **DAG Name**: `executing_multiple_dags`
+- **Tasks**:
+    - `task_a`
+    - `task_b`
+    - `task_c`
+    - `task_d`
+
+### Task Dependency
+
+- `task_a` triggers both `task_b` and `task_c` in parallel.
+- After the successful execution of `task_b` and `task_c`, `task_d` executes.
+
+---
+
+## DAG Visualization
+
+### Task Flow
+
+The graph view below shows the dependency structure:
+
+![Graph View](images/Screenshot-2024-12-15-at-1.44.07PM.png)
+
+---
+
+## Task Monitoring
+
+### Task Execution States
+
+- **Green**: Success
+- **Red**: Failed
+- **Yellow**: Running or Retry
+
+The task duration chart below shows task states and durations:
+
+![Task Execution Overview](images/Screenshot-2024-12-15-at-1.44.25PM.png)
+
+---
+
+## Execution Logs
+
+Detailed logs can be accessed in the Airflow UI to track task outputs and debug errors. Here is an example log from `task_a`:
+
+![Logs](images/Screenshot-2024-12-14-at-8.41.37PM.png)
+
+**Sample Log Output**:
+```bash
+INFO - task_A has started
+INFO - Task A printing 1
+INFO - Task A printing 2
+INFO - Task A printing 3
 ...
 INFO - Task A printing 10
 INFO - task_A has ended!!
 Prerequisites
+Ensure the following are installed:
+
 Python 3.8+
 Apache Airflow 2.x
-A running Airflow environment.
+Airflow environment is properly configured.
 Steps to Run the Project
 Clone the Repository:
 
@@ -66,17 +154,18 @@ bash
 Copy code
 git clone https://github.com/VenkateshAddala/Apache-Airflow-project.git
 cd Apache-Airflow-project
-Set Up Airflow:
+Install Apache Airflow:
 
-Install Airflow:
 bash
 Copy code
 pip install apache-airflow
-Initialize the Airflow database:
+Initialize Airflow:
+
+Initialize the database:
 bash
 Copy code
 airflow db init
-Create a user:
+Create an admin user:
 bash
 Copy code
 airflow users create \
@@ -85,34 +174,18 @@ airflow users create \
   --lastname Addala \
   --role Admin \
   --email venkatesh.addala@gmail.com
-Start Airflow Scheduler and Webserver:
+Start Airflow Services:
 
+Start the scheduler:
 bash
 Copy code
 airflow scheduler &
+Start the webserver:
+bash
+Copy code
 airflow webserver
-Add the DAG:
-
-Place the executing_multiple_dags.py file in your Airflow DAGs directory.
 Run the DAG:
 
-Open the Airflow UI at http://localhost:8080.
-Trigger the DAG named executing_multiple_dags.
-Key Highlights
-Task Dependency Visualization: Clear task flow using Airflow’s graph view.
-Task Execution Logs: Detailed logs to track task execution.
-Real-World Workflow Representation: A sample DAG for multiple interdependent tasks.
-Screenshots
-Below are the screenshots illustrating different views:
-
-Task Graph View
-
-Task Execution Logs
-
-Task Duration and Overview
-
-Conclusion
-This project is a demonstration of executing multiple tasks in Apache Airflow with dependencies, logs, and visual monitoring. It helps users understand how to design workflows, monitor task states, and debug executions effectively.
-
-Author
-Venkatesh Addala
+Copy the executing_multiple_dags.py to your Airflow DAGs directory.
+Access the Airflow UI at http://localhost:8080.
+Enable and trigger the DAG executing_multiple_dags.
