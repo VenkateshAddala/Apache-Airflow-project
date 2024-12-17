@@ -33,7 +33,9 @@ The project highlights:
 
 The graph view below shows the dependency structure:
 
-![Graph View](images/Screenshot-2024-12-15-at-1.44.07PM.png)
+
+<img width="1457" alt="Screenshot 2024-12-15 at 1 44 07 PM" src="https://github.com/user-attachments/assets/981518e6-c7bf-4be1-a866-cfca3d3478c7" />
+
 
 ---
 
@@ -47,7 +49,6 @@ The graph view below shows the dependency structure:
 
 The task duration chart below shows task states and durations:
 
-![Task Execution Overview](images/Screenshot-2024-12-15-at-1.44.25PM.png)
 
 ---
 
@@ -55,7 +56,9 @@ The task duration chart below shows task states and durations:
 
 Detailed logs can be accessed in the Airflow UI to track task outputs and debug errors. Here is an example log from `task_a`:
 
-![Logs](images/Screenshot-2024-12-14-at-8.41.37PM.png)
+
+<img width="1457" alt="Screenshot 2024-12-15 at 1 44 25 PM" src="https://github.com/user-attachments/assets/1fc67a33-3191-44fe-9616-07b572628299" />
+
 
 **Sample Log Output**:
 ```bash
@@ -130,7 +133,6 @@ The task duration chart below shows task states and durations:
 
 Detailed logs can be accessed in the Airflow UI to track task outputs and debug errors. Here is an example log from `task_a`:
 
-![Logs](images/Screenshot-2024-12-14-at-8.41.37PM.png)
 
 **Sample Log Output**:
 ```bash
@@ -141,51 +143,4 @@ INFO - Task A printing 3
 ...
 INFO - Task A printing 10
 INFO - task_A has ended!!
-Prerequisites
-Ensure the following are installed:
 
-Python 3.8+
-Apache Airflow 2.x
-Airflow environment is properly configured.
-Steps to Run the Project
-Clone the Repository:
-
-bash
-Copy code
-git clone https://github.com/VenkateshAddala/Apache-Airflow-project.git
-cd Apache-Airflow-project
-Install Apache Airflow:
-
-bash
-Copy code
-pip install apache-airflow
-Initialize Airflow:
-
-Initialize the database:
-bash
-Copy code
-airflow db init
-Create an admin user:
-bash
-Copy code
-airflow users create \
-  --username admin \
-  --firstname CloudUser \
-  --lastname Addala \
-  --role Admin \
-  --email venkatesh.addala@gmail.com
-Start Airflow Services:
-
-Start the scheduler:
-bash
-Copy code
-airflow scheduler &
-Start the webserver:
-bash
-Copy code
-airflow webserver
-Run the DAG:
-
-Copy the executing_multiple_dags.py to your Airflow DAGs directory.
-Access the Airflow UI at http://localhost:8080.
-Enable and trigger the DAG executing_multiple_dags.
