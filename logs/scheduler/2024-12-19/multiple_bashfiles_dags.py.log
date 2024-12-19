@@ -4723,3 +4723,52 @@
 [2024-12-19T18:48:43.031-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:48:43.031-0500] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-12-19T18:48:43.037-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:48:43.037-0500] {dag.py:4180} INFO - Setting next_dagrun for multiple_dags to 2024-12-18 00:00:00+00:00, run_after=2024-12-19 00:00:00+00:00
 [2024-12-19T18:48:43.042-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/multiple_bashfiles_dags.py took 0.077 seconds
+[2024-12-19T18:49:14.505-0500] {processor.py:186} INFO - Started process (PID=8420) to work on /Users/apple/airflow/dags/multiple_bashfiles_dags.py
+[2024-12-19T18:49:14.505-0500] {processor.py:914} INFO - Processing file /Users/apple/airflow/dags/multiple_bashfiles_dags.py for tasks to queue
+[2024-12-19T18:49:14.505-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:49:14.505-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/multiple_bashfiles_dags.py
+[2024-12-19T18:49:14.537-0500] {processor.py:925} INFO - DAG(s) 'multiple_dags' retrieved from /Users/apple/airflow/dags/multiple_bashfiles_dags.py
+[2024-12-19T18:49:14.569-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:49:14.569-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T18:49:14.575-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:49:14.575-0500] {dag.py:4180} INFO - Setting next_dagrun for multiple_dags to 2024-12-18 00:00:00+00:00, run_after=2024-12-19 00:00:00+00:00
+[2024-12-19T18:49:14.580-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/multiple_bashfiles_dags.py took 0.077 seconds
+[2024-12-19T18:49:46.355-0500] {processor.py:186} INFO - Started process (PID=9107) to work on /Users/apple/airflow/dags/multiple_bashfiles_dags.py
+[2024-12-19T18:49:46.356-0500] {processor.py:914} INFO - Processing file /Users/apple/airflow/dags/multiple_bashfiles_dags.py for tasks to queue
+[2024-12-19T18:49:46.356-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:49:46.356-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/multiple_bashfiles_dags.py
+[2024-12-19T18:49:46.389-0500] {processor.py:925} INFO - DAG(s) 'multiple_dags' retrieved from /Users/apple/airflow/dags/multiple_bashfiles_dags.py
+[2024-12-19T18:49:46.443-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:49:46.443-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T18:49:46.452-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:49:46.452-0500] {dag.py:4180} INFO - Setting next_dagrun for multiple_dags to 2024-12-18 00:00:00+00:00, run_after=2024-12-19 00:00:00+00:00
+[2024-12-19T18:49:46.475-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/multiple_bashfiles_dags.py took 0.121 seconds
+[2024-12-19T18:50:17.664-0500] {processor.py:186} INFO - Started process (PID=9338) to work on /Users/apple/airflow/dags/multiple_bashfiles_dags.py
+[2024-12-19T18:50:17.665-0500] {processor.py:914} INFO - Processing file /Users/apple/airflow/dags/multiple_bashfiles_dags.py for tasks to queue
+[2024-12-19T18:50:17.666-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:50:17.666-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/multiple_bashfiles_dags.py
+[2024-12-19T18:50:17.700-0500] {processor.py:925} INFO - DAG(s) 'multiple_dags' retrieved from /Users/apple/airflow/dags/multiple_bashfiles_dags.py
+[2024-12-19T18:50:17.733-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:50:17.733-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T18:50:17.739-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:50:17.739-0500] {dag.py:4180} INFO - Setting next_dagrun for multiple_dags to 2024-12-18 00:00:00+00:00, run_after=2024-12-19 00:00:00+00:00
+[2024-12-19T18:50:17.744-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/multiple_bashfiles_dags.py took 0.081 seconds
+[2024-12-19T18:50:48.958-0500] {processor.py:186} INFO - Started process (PID=9749) to work on /Users/apple/airflow/dags/multiple_bashfiles_dags.py
+[2024-12-19T18:50:48.959-0500] {processor.py:914} INFO - Processing file /Users/apple/airflow/dags/multiple_bashfiles_dags.py for tasks to queue
+[2024-12-19T18:50:48.959-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:50:48.959-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/multiple_bashfiles_dags.py
+[2024-12-19T18:50:48.992-0500] {processor.py:925} INFO - DAG(s) 'multiple_dags' retrieved from /Users/apple/airflow/dags/multiple_bashfiles_dags.py
+[2024-12-19T18:50:49.027-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:50:49.027-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T18:50:49.033-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:50:49.033-0500] {dag.py:4180} INFO - Setting next_dagrun for multiple_dags to 2024-12-18 00:00:00+00:00, run_after=2024-12-19 00:00:00+00:00
+[2024-12-19T18:50:49.039-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/multiple_bashfiles_dags.py took 0.082 seconds
+[2024-12-19T18:51:20.170-0500] {processor.py:186} INFO - Started process (PID=10164) to work on /Users/apple/airflow/dags/multiple_bashfiles_dags.py
+[2024-12-19T18:51:20.170-0500] {processor.py:914} INFO - Processing file /Users/apple/airflow/dags/multiple_bashfiles_dags.py for tasks to queue
+[2024-12-19T18:51:20.170-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:51:20.170-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/multiple_bashfiles_dags.py
+[2024-12-19T18:51:20.201-0500] {processor.py:925} INFO - DAG(s) 'multiple_dags' retrieved from /Users/apple/airflow/dags/multiple_bashfiles_dags.py
+[2024-12-19T18:51:20.235-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:51:20.235-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T18:51:20.241-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:51:20.241-0500] {dag.py:4180} INFO - Setting next_dagrun for multiple_dags to 2024-12-18 00:00:00+00:00, run_after=2024-12-19 00:00:00+00:00
+[2024-12-19T18:51:20.248-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/multiple_bashfiles_dags.py took 0.079 seconds
+[2024-12-19T18:51:52.051-0500] {processor.py:186} INFO - Started process (PID=10837) to work on /Users/apple/airflow/dags/multiple_bashfiles_dags.py
+[2024-12-19T18:51:52.054-0500] {processor.py:914} INFO - Processing file /Users/apple/airflow/dags/multiple_bashfiles_dags.py for tasks to queue
+[2024-12-19T18:51:52.054-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:51:52.054-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/multiple_bashfiles_dags.py
+[2024-12-19T18:51:52.089-0500] {processor.py:925} INFO - DAG(s) 'multiple_dags' retrieved from /Users/apple/airflow/dags/multiple_bashfiles_dags.py
+[2024-12-19T18:51:52.124-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:51:52.124-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T18:51:52.130-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:51:52.130-0500] {dag.py:4180} INFO - Setting next_dagrun for multiple_dags to 2024-12-18 00:00:00+00:00, run_after=2024-12-19 00:00:00+00:00
+[2024-12-19T18:51:52.136-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/multiple_bashfiles_dags.py took 0.086 seconds
+[2024-12-19T18:52:23.459-0500] {processor.py:186} INFO - Started process (PID=11279) to work on /Users/apple/airflow/dags/multiple_bashfiles_dags.py
+[2024-12-19T18:52:23.460-0500] {processor.py:914} INFO - Processing file /Users/apple/airflow/dags/multiple_bashfiles_dags.py for tasks to queue
+[2024-12-19T18:52:23.460-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:52:23.460-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/multiple_bashfiles_dags.py
+[2024-12-19T18:52:23.492-0500] {processor.py:925} INFO - DAG(s) 'multiple_dags' retrieved from /Users/apple/airflow/dags/multiple_bashfiles_dags.py
+[2024-12-19T18:52:23.525-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:52:23.525-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T18:52:23.531-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:52:23.530-0500] {dag.py:4180} INFO - Setting next_dagrun for multiple_dags to 2024-12-18 00:00:00+00:00, run_after=2024-12-19 00:00:00+00:00
+[2024-12-19T18:52:23.540-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/multiple_bashfiles_dags.py took 0.082 seconds
