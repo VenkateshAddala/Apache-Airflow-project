@@ -5031,3 +5031,24 @@
 [2024-12-19T18:52:33.334-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:52:33.334-0500] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-12-19T18:52:33.338-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:52:33.338-0500] {dag.py:4180} INFO - Setting next_dagrun for execute_spark_jar_with_main_class to None, run_after=None
 [2024-12-19T18:52:33.344-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/scala_airflow.py took 0.070 seconds
+[2024-12-19T18:53:04.424-0500] {processor.py:186} INFO - Started process (PID=11783) to work on /Users/apple/airflow/dags/scala_airflow.py
+[2024-12-19T18:53:04.425-0500] {processor.py:914} INFO - Processing file /Users/apple/airflow/dags/scala_airflow.py for tasks to queue
+[2024-12-19T18:53:04.425-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:53:04.425-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/scala_airflow.py
+[2024-12-19T18:53:04.430-0500] {processor.py:925} INFO - DAG(s) 'execute_spark_jar_with_main_class' retrieved from /Users/apple/airflow/dags/scala_airflow.py
+[2024-12-19T18:53:04.482-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:53:04.482-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T18:53:04.486-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:53:04.486-0500] {dag.py:4180} INFO - Setting next_dagrun for execute_spark_jar_with_main_class to None, run_after=None
+[2024-12-19T18:53:04.492-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/scala_airflow.py took 0.069 seconds
+[2024-12-19T18:53:35.724-0500] {processor.py:186} INFO - Started process (PID=12271) to work on /Users/apple/airflow/dags/scala_airflow.py
+[2024-12-19T18:53:35.725-0500] {processor.py:914} INFO - Processing file /Users/apple/airflow/dags/scala_airflow.py for tasks to queue
+[2024-12-19T18:53:35.725-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:53:35.725-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/scala_airflow.py
+[2024-12-19T18:53:35.730-0500] {processor.py:925} INFO - DAG(s) 'execute_spark_jar_with_main_class' retrieved from /Users/apple/airflow/dags/scala_airflow.py
+[2024-12-19T18:53:35.786-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:53:35.785-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T18:53:35.790-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:53:35.790-0500] {dag.py:4180} INFO - Setting next_dagrun for execute_spark_jar_with_main_class to None, run_after=None
+[2024-12-19T18:53:35.795-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/scala_airflow.py took 0.072 seconds
+[2024-12-19T18:54:06.741-0500] {processor.py:186} INFO - Started process (PID=12475) to work on /Users/apple/airflow/dags/scala_airflow.py
+[2024-12-19T18:54:06.742-0500] {processor.py:914} INFO - Processing file /Users/apple/airflow/dags/scala_airflow.py for tasks to queue
+[2024-12-19T18:54:06.742-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:54:06.742-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/scala_airflow.py
+[2024-12-19T18:54:06.747-0500] {processor.py:925} INFO - DAG(s) 'execute_spark_jar_with_main_class' retrieved from /Users/apple/airflow/dags/scala_airflow.py
+[2024-12-19T18:54:06.802-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:54:06.802-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T18:54:06.806-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:54:06.806-0500] {dag.py:4180} INFO - Setting next_dagrun for execute_spark_jar_with_main_class to None, run_after=None
+[2024-12-19T18:54:06.812-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/scala_airflow.py took 0.072 seconds

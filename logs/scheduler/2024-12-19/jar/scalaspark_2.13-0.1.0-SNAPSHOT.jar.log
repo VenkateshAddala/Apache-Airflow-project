@@ -3498,3 +3498,13 @@
 [2024-12-19T18:52:48.662-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:52:48.662-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/jar/scalaspark_2.13-0.1.0-SNAPSHOT.jar
 [2024-12-19T18:52:48.662-0500] {processor.py:927} WARNING - No viable dags retrieved from /Users/apple/airflow/dags/jar/scalaspark_2.13-0.1.0-SNAPSHOT.jar
 [2024-12-19T18:52:48.713-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/jar/scalaspark_2.13-0.1.0-SNAPSHOT.jar took 0.053 seconds
+[2024-12-19T18:53:19.834-0500] {processor.py:186} INFO - Started process (PID=12174) to work on /Users/apple/airflow/dags/jar/scalaspark_2.13-0.1.0-SNAPSHOT.jar
+[2024-12-19T18:53:19.835-0500] {processor.py:914} INFO - Processing file /Users/apple/airflow/dags/jar/scalaspark_2.13-0.1.0-SNAPSHOT.jar for tasks to queue
+[2024-12-19T18:53:19.835-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:53:19.835-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/jar/scalaspark_2.13-0.1.0-SNAPSHOT.jar
+[2024-12-19T18:53:19.836-0500] {processor.py:927} WARNING - No viable dags retrieved from /Users/apple/airflow/dags/jar/scalaspark_2.13-0.1.0-SNAPSHOT.jar
+[2024-12-19T18:53:19.886-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/jar/scalaspark_2.13-0.1.0-SNAPSHOT.jar took 0.053 seconds
+[2024-12-19T18:53:50.873-0500] {processor.py:186} INFO - Started process (PID=12374) to work on /Users/apple/airflow/dags/jar/scalaspark_2.13-0.1.0-SNAPSHOT.jar
+[2024-12-19T18:53:50.874-0500] {processor.py:914} INFO - Processing file /Users/apple/airflow/dags/jar/scalaspark_2.13-0.1.0-SNAPSHOT.jar for tasks to queue
+[2024-12-19T18:53:50.874-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:53:50.874-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/jar/scalaspark_2.13-0.1.0-SNAPSHOT.jar
+[2024-12-19T18:53:50.875-0500] {processor.py:927} WARNING - No viable dags retrieved from /Users/apple/airflow/dags/jar/scalaspark_2.13-0.1.0-SNAPSHOT.jar
+[2024-12-19T18:53:51.010-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/jar/scalaspark_2.13-0.1.0-SNAPSHOT.jar took 0.139 seconds
