@@ -1,0 +1,106 @@
+[2024-12-19T17:55:58.097-0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-19T17:55:58.100-0500] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: executing_python_etl_dag.read_the_csv_files manual__2024-12-19T22:55:55.899266+00:00 [queued]>
+[2024-12-19T17:55:58.102-0500] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: executing_python_etl_dag.read_the_csv_files manual__2024-12-19T22:55:55.899266+00:00 [queued]>
+[2024-12-19T17:55:58.102-0500] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-19T17:55:58.107-0500] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): read_the_csv_files> on 2024-12-19 22:55:55.899266+00:00
+[2024-12-19T17:55:58.109-0500] {standard_task_runner.py:72} INFO - Started process 87058 to run task
+[2024-12-19T17:55:58.112-0500] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'executing_python_etl_dag', 'read_the_csv_files', 'manual__2024-12-19T22:55:55.899266+00:00', '--job-id', '90', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/var/folders/jw/j912b4gd5xj0c7j8p3syth7r0000gn/T/tmpkjd8og7b']
+[2024-12-19T17:55:58.114-0500] {standard_task_runner.py:105} INFO - Job 90: Subtask read_the_csv_files
+[2024-12-19T17:55:58.128-0500] {task_command.py:467} INFO - Running <TaskInstance: executing_python_etl_dag.read_the_csv_files manual__2024-12-19T22:55:55.899266+00:00 [running]> on host mac-4952.lan
+[2024-12-19T17:55:58.149-0500] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='venkatesh' AIRFLOW_CTX_DAG_ID='executing_python_etl_dag' AIRFLOW_CTX_TASK_ID='read_the_csv_files' AIRFLOW_CTX_EXECUTION_DATE='2024-12-19T22:55:55.899266+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-19T22:55:55.899266+00:00'
+[2024-12-19T17:55:58.150-0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-19T17:55:58.172-0500] {logging_mixin.py:190} INFO -    sale_id  product_id  customer_id   sale_date  sale_amount
+0        1           1          316  2024-07-16       733.05
+1        2          24          891  2024-03-26        26.97
+2        3          43          364  2024-04-27       316.11
+3        4           4          379  2024-10-14       111.81
+4        5           6          963  2024-07-11       482.48
+[2024-12-19T17:55:58.176-0500] {logging_mixin.py:190} INFO -    customer_id  ...                                   customer_address
+0            1  ...     176 Long Keys Apt. 905\nFrazierburgh, NV 37529
+1            2  ...  472 Mary Villages Suite 888\nEast Zacharyland,...
+2            3  ...       126 Michelle Parkways\nJoshuahaven, MI 87974
+3            4  ...       311 Odonnell Square\nBlackburnside, OK 54857
+4            5  ...  26100 Smith Heights Suite 402\nWest Jonathan, ...
+
+[5 rows x 4 columns]
+[2024-12-19T17:55:58.178-0500] {logging_mixin.py:190} INFO -    product_id product_name     category
+0           1    Product_1  Electronics
+1           2    Product_2     Clothing
+2           3    Product_3        Books
+3           4    Product_4        Books
+4           5    Product_5         Home
+[2024-12-19T17:55:58.179-0500] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/apple/airflow/dags/etl.py", line 25, in read_csv
+    return sales_data.sample(n).to_json(),customers_data.sample(n).to_json(),products_data.sample(n).to_json
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/pandas/core/generic.py", line 6118, in sample
+    sampled_indices = sample.sample(obj_len, size, replace, weights, rs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/pandas/core/sample.py", line 152, in sample
+    return random_state.choice(obj_len, size=size, replace=replace, p=weights).astype(
+  File "numpy/random/mtrand.pyx", line 1020, in numpy.random.mtrand.RandomState.choice
+ValueError: Cannot take a larger sample than population when 'replace=False'
+[2024-12-19T17:55:58.185-0500] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=executing_python_etl_dag, task_id=read_the_csv_files, run_id=manual__2024-12-19T22:55:55.899266+00:00, execution_date=20241219T225555, start_date=20241219T225558, end_date=20241219T225558
+[2024-12-19T17:55:58.188-0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-19T17:55:58.189-0500] {standard_task_runner.py:124} ERROR - Failed to execute job 90 for task read_the_csv_files (Cannot take a larger sample than population when 'replace=False'; 87058)
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/apple/airflow/dags/etl.py", line 25, in read_csv
+    return sales_data.sample(n).to_json(),customers_data.sample(n).to_json(),products_data.sample(n).to_json
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/pandas/core/generic.py", line 6118, in sample
+    sampled_indices = sample.sample(obj_len, size, replace, weights, rs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/pandas/core/sample.py", line 152, in sample
+    return random_state.choice(obj_len, size=size, replace=replace, p=weights).astype(
+  File "numpy/random/mtrand.pyx", line 1020, in numpy.random.mtrand.RandomState.choice
+ValueError: Cannot take a larger sample than population when 'replace=False'
+[2024-12-19T17:55:58.219-0500] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-12-19T17:55:58.224-0500] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-19T17:55:58.224-0500] {local_task_job_runner.py:245} INFO - ::endgroup::

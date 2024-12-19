@@ -1,0 +1,80 @@
+[2024-12-19T17:49:53.983-0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-19T17:49:53.986-0500] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: executing_python_etl_dag.read_the_csv_files manual__2024-12-19T22:49:51.960986+00:00 [queued]>
+[2024-12-19T17:49:53.987-0500] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: executing_python_etl_dag.read_the_csv_files manual__2024-12-19T22:49:51.960986+00:00 [queued]>
+[2024-12-19T17:49:53.988-0500] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-19T17:49:53.992-0500] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): read_the_csv_files> on 2024-12-19 22:49:51.960986+00:00
+[2024-12-19T17:49:53.994-0500] {standard_task_runner.py:72} INFO - Started process 85029 to run task
+[2024-12-19T17:49:53.997-0500] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'executing_python_etl_dag', 'read_the_csv_files', 'manual__2024-12-19T22:49:51.960986+00:00', '--job-id', '88', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/var/folders/jw/j912b4gd5xj0c7j8p3syth7r0000gn/T/tmp70_9psvt']
+[2024-12-19T17:49:53.999-0500] {standard_task_runner.py:105} INFO - Job 88: Subtask read_the_csv_files
+[2024-12-19T17:49:54.016-0500] {task_command.py:467} INFO - Running <TaskInstance: executing_python_etl_dag.read_the_csv_files manual__2024-12-19T22:49:51.960986+00:00 [running]> on host mac-4952.lan
+[2024-12-19T17:49:54.036-0500] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='venkatesh' AIRFLOW_CTX_DAG_ID='executing_python_etl_dag' AIRFLOW_CTX_TASK_ID='read_the_csv_files' AIRFLOW_CTX_EXECUTION_DATE='2024-12-19T22:49:51.960986+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-19T22:49:51.960986+00:00'
+[2024-12-19T17:49:54.037-0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-19T17:49:54.053-0500] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/apple/airflow/dags/etl.py", line 18, in read_csv
+    sales_data = pd.read_csv("/Users/apple/airflow/dags/datasets/sales.csv").limit(500)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/pandas/core/generic.py", line 6299, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'limit'
+[2024-12-19T17:49:54.059-0500] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=executing_python_etl_dag, task_id=read_the_csv_files, run_id=manual__2024-12-19T22:49:51.960986+00:00, execution_date=20241219T224951, start_date=20241219T224953, end_date=20241219T224954
+[2024-12-19T17:49:54.062-0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-19T17:49:54.062-0500] {standard_task_runner.py:124} ERROR - Failed to execute job 88 for task read_the_csv_files ('DataFrame' object has no attribute 'limit'; 85029)
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/apple/airflow/dags/etl.py", line 18, in read_csv
+    sales_data = pd.read_csv("/Users/apple/airflow/dags/datasets/sales.csv").limit(500)
+  File "/opt/anaconda3/envs/python310/lib/python3.10/site-packages/pandas/core/generic.py", line 6299, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'limit'
+[2024-12-19T17:49:54.104-0500] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-12-19T17:49:54.109-0500] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-19T17:49:54.110-0500] {local_task_job_runner.py:245} INFO - ::endgroup::
