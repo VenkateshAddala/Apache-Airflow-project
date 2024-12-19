@@ -7346,3 +7346,24 @@ SyntaxError: invalid syntax
 [2024-12-19T18:44:07.592-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:44:07.592-0500] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-12-19T18:44:07.624-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:44:07.624-0500] {dag.py:4180} INFO - Setting next_dagrun for executing_python_etl_dag to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
 [2024-12-19T18:44:07.630-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/etl.py took 0.340 seconds
+[2024-12-19T18:44:38.758-0500] {processor.py:186} INFO - Started process (PID=5607) to work on /Users/apple/airflow/dags/etl.py
+[2024-12-19T18:44:38.758-0500] {processor.py:914} INFO - Processing file /Users/apple/airflow/dags/etl.py for tasks to queue
+[2024-12-19T18:44:38.759-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:44:38.758-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/etl.py
+[2024-12-19T18:44:39.042-0500] {processor.py:925} INFO - DAG(s) 'executing_python_etl_dag' retrieved from /Users/apple/airflow/dags/etl.py
+[2024-12-19T18:44:39.074-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:44:39.074-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T18:44:39.106-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:44:39.106-0500] {dag.py:4180} INFO - Setting next_dagrun for executing_python_etl_dag to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T18:44:39.112-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/etl.py took 0.356 seconds
+[2024-12-19T18:45:10.899-0500] {processor.py:186} INFO - Started process (PID=5834) to work on /Users/apple/airflow/dags/etl.py
+[2024-12-19T18:45:10.901-0500] {processor.py:914} INFO - Processing file /Users/apple/airflow/dags/etl.py for tasks to queue
+[2024-12-19T18:45:10.902-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:45:10.901-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/etl.py
+[2024-12-19T18:45:11.210-0500] {processor.py:925} INFO - DAG(s) 'executing_python_etl_dag' retrieved from /Users/apple/airflow/dags/etl.py
+[2024-12-19T18:45:11.243-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:45:11.243-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T18:45:11.277-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:45:11.277-0500] {dag.py:4180} INFO - Setting next_dagrun for executing_python_etl_dag to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T18:45:11.283-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/etl.py took 0.385 seconds
+[2024-12-19T18:45:42.790-0500] {processor.py:186} INFO - Started process (PID=6112) to work on /Users/apple/airflow/dags/etl.py
+[2024-12-19T18:45:42.791-0500] {processor.py:914} INFO - Processing file /Users/apple/airflow/dags/etl.py for tasks to queue
+[2024-12-19T18:45:42.791-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:45:42.791-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/etl.py
+[2024-12-19T18:45:43.086-0500] {processor.py:925} INFO - DAG(s) 'executing_python_etl_dag' retrieved from /Users/apple/airflow/dags/etl.py
+[2024-12-19T18:45:43.119-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:45:43.119-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T18:45:43.151-0500] {logging_mixin.py:190} INFO - [2024-12-19T18:45:43.151-0500] {dag.py:4180} INFO - Setting next_dagrun for executing_python_etl_dag to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T18:45:43.157-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/etl.py took 0.371 seconds
