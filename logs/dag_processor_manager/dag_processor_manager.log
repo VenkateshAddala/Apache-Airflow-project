@@ -23557,3 +23557,55 @@ File Path                                                         PID    Runtime
 /Users/apple/airflow/dags/multiple_python_operator_dag.py                                  1           0  0.78s           2024-12-19T23:39:45                      12
 /Users/apple/airflow/dags/jar/scalaspark_2.13-0.1.0-SNAPSHOT.jar                           0           0  0.75s           2024-12-19T23:39:42                       3
 ================================================================================
+[2024-12-19T18:40:41.005-0500] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/apple/airflow/dags/etl.py                                                           1           0  0.92s           2024-12-19T23:40:31                      12
+/Users/apple/airflow/dags/simple_dag_using_bash.py                                         1           0  0.84s           2024-12-19T23:40:12                      12
+/Users/apple/airflow/dags/multiple_bashfiles_dags.py                                       1           0  0.79s           2024-12-19T23:40:25                      12
+/Users/apple/airflow/dags/scala_airflow.py                                                 1           0  0.77s           2024-12-19T23:40:27                      10
+/Users/apple/airflow/dags/jar/scalaspark_2.13-0.1.0-SNAPSHOT.jar                           0           0  0.73s           2024-12-19T23:40:13                       3
+/Users/apple/airflow/dags/multiple_python_operator_dag.py                                  1           0  0.73s           2024-12-19T23:40:18                      12
+================================================================================
+[2024-12-19T18:41:11.224-0500] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/apple/airflow/dags/etl.py                                                           1           0  1.09s           2024-12-19T23:41:03                      12
+/Users/apple/airflow/dags/simple_dag_using_bash.py                                         1           0  1.07s           2024-12-19T23:40:43                      12
+/Users/apple/airflow/dags/multiple_python_operator_dag.py                                  1           0  0.89s           2024-12-19T23:40:50                      12
+/Users/apple/airflow/dags/scala_airflow.py                                                 1           0  0.86s           2024-12-19T23:40:58                      10
+/Users/apple/airflow/dags/jar/scalaspark_2.13-0.1.0-SNAPSHOT.jar                           0           0  0.77s           2024-12-19T23:40:45                       3
+/Users/apple/airflow/dags/multiple_bashfiles_dags.py                                       1           0  0.74s           2024-12-19T23:40:56                      12
+================================================================================
+[2024-12-19T18:41:42.069-0500] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/apple/airflow/dags/etl.py                                                           1           0  1.11s           2024-12-19T23:41:34                      12
+/Users/apple/airflow/dags/simple_dag_using_bash.py                                         1           0  1.01s           2024-12-19T23:41:15                      12
+/Users/apple/airflow/dags/multiple_bashfiles_dags.py                                       1           0  0.74s           2024-12-19T23:41:27                      12
+/Users/apple/airflow/dags/scala_airflow.py                                                 1           0  0.74s           2024-12-19T23:41:30                      10
+/Users/apple/airflow/dags/multiple_python_operator_dag.py                                  1           0  0.73s           2024-12-19T23:41:22                      12
+/Users/apple/airflow/dags/jar/scalaspark_2.13-0.1.0-SNAPSHOT.jar                           0           0  0.73s           2024-12-19T23:41:16                       3
+================================================================================
+[2024-12-19T18:42:12.592-0500] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/apple/airflow/dags/etl.py                                                           1           0  1.05s           2024-12-19T23:42:05                      12
+/Users/apple/airflow/dags/simple_dag_using_bash.py                                         1           0  0.99s           2024-12-19T23:41:46                      12
+/Users/apple/airflow/dags/jar/scalaspark_2.13-0.1.0-SNAPSHOT.jar                           0           0  0.83s           2024-12-19T23:41:48                       3
+/Users/apple/airflow/dags/multiple_python_operator_dag.py                                  1           0  0.75s           2024-12-19T23:41:53                      12
+/Users/apple/airflow/dags/multiple_bashfiles_dags.py                                       1           0  0.74s           2024-12-19T23:41:58                      12
+/Users/apple/airflow/dags/scala_airflow.py                                                 1           0  0.74s           2024-12-19T23:42:01                      10
+================================================================================
