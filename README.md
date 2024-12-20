@@ -76,8 +76,10 @@ Logs are available for each task to debug and monitor execution. Below is an exa
 
 **Sample Log Output**:
 ```plaintext
-INFO - Starting segmentation task
-INFO - Segmented customers into:
-    Premium
-    Occasional
-INFO - Segmentation completed successfully
+[2024-12-19, 23:36:42 UTC] {logging_mixin.py:190} INFO -    customer_id       customer_name  total_purchases  total_spent     segment
+0            1        Ryan Hubbard               10      5208.61     Premium
+1            2       Jason Sherman               15      8300.50     Premium
+2            3     Kimberly Howard               12      5845.09     Premium
+3            4  Christopher Warren               11      5594.66     Premium
+4            5      Valerie Taylor                5      1428.00  Occasional
+[2024-12-19, 23:36:42 UTC] {python.py:240} INFO - Done. Returned value was: None
