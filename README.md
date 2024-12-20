@@ -1,77 +1,83 @@
-# Apache Airflow Project
+# Apache Airflow Project: Python ETL DAG
 
 ## Overview
 
-This project demonstrates executing **multiple dependent DAGs** in Apache Airflow. Airflow is an open-source platform to programmatically author, schedule, and monitor workflows.
-
-The project highlights:
-- Task dependencies and parallel execution.
-- Task execution monitoring with logs and UI visualization.
-- Use of **BashOperator** for task execution.
+This project demonstrates an **ETL (Extract, Transform, Load)** pipeline using **Apache Airflow** with Python code. It is designed to process CSV files, clean and enrich data, compute KPIs, and perform data segmentation. The project showcases the power of Airflow's PythonOperator and XComs to enable seamless data processing workflows.
 
 ---
 
 ## DAG Details
 
-- **DAG Name**: `executing_multiple_dags`
+- **DAG Name**: `executing_python_etl_dag`
 - **Tasks**:
-    - `task_a`
-    - `task_b`
-    - `task_c`
-    - `task_d`
-
-### Task Dependency
-
-- `task_a` triggers both `task_b` and `task_c` in parallel.
-- After the successful execution of `task_b` and `task_c`, `task_d` executes.
+    - `read_the_csv_files`: Reads input CSV files.
+    - `clean_the_data`: Cleans the customer, product, and sales data.
+    - `enrich_the_data`: Enriches data by merging datasets.
+    - `compute_KPIs_for_the_data`: Computes Key Performance Indicators (KPIs).
+    - `Segmentation`: Segments data based on customer activity.
 
 ---
 
 ## DAG Visualization
 
-### Task Flow
+### Task Dependency Flow
 
-The graph view below shows the dependency structure:
+The DAG flow ensures dependencies are maintained between tasks. Below is the graph view of the DAG:
+
+<img width="1466" alt="Screenshot 2024-12-19 at 6 38 05 PM" src="https://github.com/user-attachments/assets/14519d0d-f9ed-418e-b02e-1de4467a022d" />
 
 
-<img width="1457" alt="Screenshot 2024-12-15 at 1 44 07 PM" src="https://github.com/user-attachments/assets/981518e6-c7bf-4be1-a866-cfca3d3478c7" />
+### Task Execution States
+
+The task execution overview shows:
+- Green: Success
+- Red: Failed
+- Yellow: Running or Retry
 
 
 ---
 
-## Task Monitoring
+## Data Processing Steps
 
-### Task Execution States
+1. **Extract Data**:
+    - Reads customer, product, and sales data from CSV files using the `read_the_csv_files` task.
+    - Outputs raw data for further processing.
 
-- **Green**: Success
-- **Red**: Failed
-- **Yellow**: Running or Retry
+    **XCom Output Example**:
+    <img width="1461" alt="Screenshot 2024-12-19 at 6 39 30 PM" src="https://github.com/user-attachments/assets/553042d3-062e-4196-9d08-76f76c3223f4" />
 
-The task duration chart below shows task states and durations:
+2. **Transform Data**:
+    - Cleans raw data (e.g., removes null values) via the `clean_the_data` task.
+    - Enriches data by merging datasets using the `enrich_the_data` task.
 
+    **Enriched Data Example**:
+    <img width="1464" alt="Screenshot 2024-12-19 at 7 03 36 PM" src="https://github.com/user-attachments/assets/09e9cbdd-09a8-4ff8-b7af-69c12b1426cf" />
+
+
+3. **Compute KPIs**:
+    - Calculates KPIs such as `total_revenue` and `total_units_sold` using the `compute_KPIs_for_the_data` task.
+
+    **KPIs Example**:
+    <img width="1460" alt="Screenshot 2024-12-19 at 7 03 55 PM" src="https://github.com/user-attachments/assets/d29990c6-c361-4911-aa0d-3b5046e9711d" />
+
+
+4. **Load Data**:
+    - Segments customers based on KPIs via the `Segmentation` task.
+    <img width="1462" alt="Screenshot 2024-12-19 at 7 04 17 PM" src="https://github.com/user-attachments/assets/f68f5038-95b4-47ed-8f5b-bdffb605c750" />
 
 ---
 
 ## Execution Logs
 
-Detailed logs can be accessed in the Airflow UI to track task outputs and debug errors. Here is an example log from `task_a`:
+Logs are available for each task to debug and monitor execution. Below is an example from the `Segmentation` task:
 
-
-<img width="1457" alt="Screenshot 2024-12-15 at 1 44 25 PM" src="https://github.com/user-attachments/assets/1fc67a33-3191-44fe-9616-07b572628299" />
+<img width="1462" alt="Screenshot 2024-12-19 at 7 04 17 PM" src="https://github.com/user-attachments/assets/f68f5038-95b4-47ed-8f5b-bdffb605c750" />
 
 
 **Sample Log Output**:
-```bash
-INFO - task_A has started
-INFO - Task A printing 1
-INFO - Task A printing 2
-INFO - Task A printing 3
-...
-INFO - Task A printing 10
-INFO - task_A has ended!!
-
-INFO - Task A printing 3
-...
-INFO - Task A printing 10
-INFO - task_A has ended!!
-
+```plaintext
+INFO - Starting segmentation task
+INFO - Segmented customers into:
+    Premium
+    Occasional
+INFO - Segmentation completed successfully
