@@ -1,0 +1,14 @@
+[2024-12-19T19:00:23.194-0500] {processor.py:186} INFO - Started process (PID=19228) to work on /Users/apple/airflow/dags/scala_airflow.py
+[2024-12-19T19:00:23.194-0500] {processor.py:914} INFO - Processing file /Users/apple/airflow/dags/scala_airflow.py for tasks to queue
+[2024-12-19T19:00:23.194-0500] {logging_mixin.py:190} INFO - [2024-12-19T19:00:23.194-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/scala_airflow.py
+[2024-12-19T19:00:23.201-0500] {processor.py:925} INFO - DAG(s) 'execute_spark_jar_with_main_class' retrieved from /Users/apple/airflow/dags/scala_airflow.py
+[2024-12-19T19:00:23.254-0500] {logging_mixin.py:190} INFO - [2024-12-19T19:00:23.254-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T19:00:23.258-0500] {logging_mixin.py:190} INFO - [2024-12-19T19:00:23.258-0500] {dag.py:4180} INFO - Setting next_dagrun for execute_spark_jar_with_main_class to None, run_after=None
+[2024-12-19T19:00:23.264-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/scala_airflow.py took 0.071 seconds
+[2024-12-19T19:00:54.421-0500] {processor.py:186} INFO - Started process (PID=20163) to work on /Users/apple/airflow/dags/scala_airflow.py
+[2024-12-19T19:00:54.422-0500] {processor.py:914} INFO - Processing file /Users/apple/airflow/dags/scala_airflow.py for tasks to queue
+[2024-12-19T19:00:54.423-0500] {logging_mixin.py:190} INFO - [2024-12-19T19:00:54.423-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/scala_airflow.py
+[2024-12-19T19:00:54.427-0500] {processor.py:925} INFO - DAG(s) 'execute_spark_jar_with_main_class' retrieved from /Users/apple/airflow/dags/scala_airflow.py
+[2024-12-19T19:00:54.482-0500] {logging_mixin.py:190} INFO - [2024-12-19T19:00:54.482-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T19:00:54.486-0500] {logging_mixin.py:190} INFO - [2024-12-19T19:00:54.486-0500] {dag.py:4180} INFO - Setting next_dagrun for execute_spark_jar_with_main_class to None, run_after=None
+[2024-12-19T19:00:54.492-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/scala_airflow.py took 0.072 seconds

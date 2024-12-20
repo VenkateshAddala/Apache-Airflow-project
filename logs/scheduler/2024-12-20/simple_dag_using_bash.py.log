@@ -1,0 +1,14 @@
+[2024-12-19T19:00:07.940-0500] {processor.py:186} INFO - Started process (PID=18585) to work on /Users/apple/airflow/dags/simple_dag_using_bash.py
+[2024-12-19T19:00:07.940-0500] {processor.py:914} INFO - Processing file /Users/apple/airflow/dags/simple_dag_using_bash.py for tasks to queue
+[2024-12-19T19:00:07.940-0500] {logging_mixin.py:190} INFO - [2024-12-19T19:00:07.940-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/simple_dag_using_bash.py
+[2024-12-19T19:00:07.978-0500] {processor.py:925} INFO - DAG(s) 'executing_multiple_dags' retrieved from /Users/apple/airflow/dags/simple_dag_using_bash.py
+[2024-12-19T19:00:08.059-0500] {logging_mixin.py:190} INFO - [2024-12-19T19:00:08.059-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T19:00:08.064-0500] {logging_mixin.py:190} INFO - [2024-12-19T19:00:08.064-0500] {dag.py:4180} INFO - Setting next_dagrun for executing_multiple_dags to None, run_after=None
+[2024-12-19T19:00:08.070-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/simple_dag_using_bash.py took 0.132 seconds
+[2024-12-19T19:00:39.433-0500] {processor.py:186} INFO - Started process (PID=19810) to work on /Users/apple/airflow/dags/simple_dag_using_bash.py
+[2024-12-19T19:00:39.434-0500] {processor.py:914} INFO - Processing file /Users/apple/airflow/dags/simple_dag_using_bash.py for tasks to queue
+[2024-12-19T19:00:39.434-0500] {logging_mixin.py:190} INFO - [2024-12-19T19:00:39.434-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/simple_dag_using_bash.py
+[2024-12-19T19:00:39.464-0500] {processor.py:925} INFO - DAG(s) 'executing_multiple_dags' retrieved from /Users/apple/airflow/dags/simple_dag_using_bash.py
+[2024-12-19T19:00:39.537-0500] {logging_mixin.py:190} INFO - [2024-12-19T19:00:39.537-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T19:00:39.543-0500] {logging_mixin.py:190} INFO - [2024-12-19T19:00:39.543-0500] {dag.py:4180} INFO - Setting next_dagrun for executing_multiple_dags to None, run_after=None
+[2024-12-19T19:00:39.549-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/simple_dag_using_bash.py took 0.117 seconds

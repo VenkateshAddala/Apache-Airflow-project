@@ -1,0 +1,14 @@
+[2024-12-19T19:00:11.533-0500] {processor.py:186} INFO - Started process (PID=18628) to work on /Users/apple/airflow/dags/multiple_python_operator_dag.py
+[2024-12-19T19:00:11.533-0500] {processor.py:914} INFO - Processing file /Users/apple/airflow/dags/multiple_python_operator_dag.py for tasks to queue
+[2024-12-19T19:00:11.533-0500] {logging_mixin.py:190} INFO - [2024-12-19T19:00:11.533-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/multiple_python_operator_dag.py
+[2024-12-19T19:00:11.566-0500] {processor.py:925} INFO - DAG(s) 'executing_python_operators_dag' retrieved from /Users/apple/airflow/dags/multiple_python_operator_dag.py
+[2024-12-19T19:00:11.630-0500] {logging_mixin.py:190} INFO - [2024-12-19T19:00:11.630-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T19:00:11.636-0500] {logging_mixin.py:190} INFO - [2024-12-19T19:00:11.636-0500] {dag.py:4180} INFO - Setting next_dagrun for executing_python_operators_dag to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T19:00:11.643-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/multiple_python_operator_dag.py took 0.111 seconds
+[2024-12-19T19:00:42.956-0500] {processor.py:186} INFO - Started process (PID=19825) to work on /Users/apple/airflow/dags/multiple_python_operator_dag.py
+[2024-12-19T19:00:42.957-0500] {processor.py:914} INFO - Processing file /Users/apple/airflow/dags/multiple_python_operator_dag.py for tasks to queue
+[2024-12-19T19:00:42.958-0500] {logging_mixin.py:190} INFO - [2024-12-19T19:00:42.958-0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/apple/airflow/dags/multiple_python_operator_dag.py
+[2024-12-19T19:00:42.987-0500] {processor.py:925} INFO - DAG(s) 'executing_python_operators_dag' retrieved from /Users/apple/airflow/dags/multiple_python_operator_dag.py
+[2024-12-19T19:00:43.049-0500] {logging_mixin.py:190} INFO - [2024-12-19T19:00:43.048-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-19T19:00:43.055-0500] {logging_mixin.py:190} INFO - [2024-12-19T19:00:43.055-0500] {dag.py:4180} INFO - Setting next_dagrun for executing_python_operators_dag to 2024-12-19 00:00:00+00:00, run_after=2024-12-20 00:00:00+00:00
+[2024-12-19T19:00:43.061-0500] {processor.py:208} INFO - Processing /Users/apple/airflow/dags/multiple_python_operator_dag.py took 0.106 seconds

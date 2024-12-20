@@ -1,0 +1,75 @@
+[2024-12-19T19:00:08.946-0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-19T19:00:08.950-0500] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: executing_python_etl_dag.Segementation scheduled__2024-12-19T00:00:00+00:00 [queued]>
+[2024-12-19T19:00:08.953-0500] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: executing_python_etl_dag.Segementation scheduled__2024-12-19T00:00:00+00:00 [queued]>
+[2024-12-19T19:00:08.953-0500] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-19T19:00:08.957-0500] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): Segementation> on 2024-12-19 00:00:00+00:00
+[2024-12-19T19:00:08.959-0500] {standard_task_runner.py:72} INFO - Started process 18613 to run task
+[2024-12-19T19:00:08.962-0500] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'executing_python_etl_dag', 'Segementation', 'scheduled__2024-12-19T00:00:00+00:00', '--job-id', '110', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/var/folders/jw/j912b4gd5xj0c7j8p3syth7r0000gn/T/tmptzvffi7w']
+[2024-12-19T19:00:08.963-0500] {standard_task_runner.py:105} INFO - Job 110: Subtask Segementation
+[2024-12-19T19:00:08.981-0500] {task_command.py:467} INFO - Running <TaskInstance: executing_python_etl_dag.Segementation scheduled__2024-12-19T00:00:00+00:00 [running]> on host mac-4952.lan
+[2024-12-19T19:00:09.001-0500] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='venkatesh' AIRFLOW_CTX_DAG_ID='executing_python_etl_dag' AIRFLOW_CTX_TASK_ID='Segementation' AIRFLOW_CTX_EXECUTION_DATE='2024-12-19T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-19T00:00:00+00:00'
+[2024-12-19T19:00:09.002-0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-19T19:00:09.014-0500] {logging_mixin.py:190} WARNING - /Users/apple/airflow/dags/etl.py:87 FutureWarning: Passing literal json to 'read_json' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2024-12-19T19:00:09.029-0500] {logging_mixin.py:190} WARNING - /Users/apple/airflow/dags/etl.py:88 FutureWarning: Passing literal json to 'read_json' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2024-12-19T19:00:09.038-0500] {logging_mixin.py:190} INFO -    customer_id       customer_name  total_purchases  total_spent     segment
+0            1        Ryan Hubbard               10      5208.61     Premium
+1            2       Jason Sherman               15      8300.50     Premium
+2            3     Kimberly Howard               12      5845.09     Premium
+3            4  Christopher Warren               11      5594.66     Premium
+4            5      Valerie Taylor                5      1428.00  Occasional
+[2024-12-19T19:00:09.038-0500] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-19T19:00:09.040-0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-19T19:00:09.040-0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=executing_python_etl_dag, task_id=Segementation, run_id=scheduled__2024-12-19T00:00:00+00:00, execution_date=20241219T000000, start_date=20241220T000008, end_date=20241220T000009
+[2024-12-19T19:00:09.069-0500] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-19T19:00:09.074-0500] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-19T19:00:09.075-0500] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-12-19T19:00:21.234-0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-19T19:00:21.238-0500] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: executing_python_etl_dag.Segementation scheduled__2024-12-19T00:00:00+00:00 [queued]>
+[2024-12-19T19:00:21.240-0500] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: executing_python_etl_dag.Segementation scheduled__2024-12-19T00:00:00+00:00 [queued]>
+[2024-12-19T19:00:21.240-0500] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-19T19:00:21.245-0500] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): Segementation> on 2024-12-19 00:00:00+00:00
+[2024-12-19T19:00:21.247-0500] {standard_task_runner.py:72} INFO - Started process 19223 to run task
+[2024-12-19T19:00:21.250-0500] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'executing_python_etl_dag', 'Segementation', 'scheduled__2024-12-19T00:00:00+00:00', '--job-id', '110', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/var/folders/jw/j912b4gd5xj0c7j8p3syth7r0000gn/T/tmp38we2ggg']
+[2024-12-19T19:00:21.251-0500] {standard_task_runner.py:105} INFO - Job 110: Subtask Segementation
+[2024-12-19T19:00:21.266-0500] {task_command.py:467} INFO - Running <TaskInstance: executing_python_etl_dag.Segementation scheduled__2024-12-19T00:00:00+00:00 [running]> on host mac-4952.lan
+[2024-12-19T19:00:21.285-0500] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='venkatesh' AIRFLOW_CTX_DAG_ID='executing_python_etl_dag' AIRFLOW_CTX_TASK_ID='Segementation' AIRFLOW_CTX_EXECUTION_DATE='2024-12-19T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-19T00:00:00+00:00'
+[2024-12-19T19:00:21.285-0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-19T19:00:21.298-0500] {logging_mixin.py:190} WARNING - /Users/apple/airflow/dags/etl.py:87 FutureWarning: Passing literal json to 'read_json' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2024-12-19T19:00:21.312-0500] {logging_mixin.py:190} WARNING - /Users/apple/airflow/dags/etl.py:88 FutureWarning: Passing literal json to 'read_json' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2024-12-19T19:00:21.320-0500] {logging_mixin.py:190} INFO -    customer_id       customer_name  total_purchases  total_spent     segment
+0            1        Ryan Hubbard               10      5208.61     Premium
+1            2       Jason Sherman               15      8300.50     Premium
+2            3     Kimberly Howard               12      5845.09     Premium
+3            4  Christopher Warren               11      5594.66     Premium
+4            5      Valerie Taylor                5      1428.00  Occasional
+[2024-12-19T19:00:21.321-0500] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-19T19:00:21.323-0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-19T19:00:21.323-0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=executing_python_etl_dag, task_id=Segementation, run_id=scheduled__2024-12-19T00:00:00+00:00, execution_date=20241219T000000, start_date=20241220T000021, end_date=20241220T000021
+[2024-12-19T19:00:21.357-0500] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-19T19:00:21.362-0500] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-19T19:00:21.362-0500] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-12-19T19:00:34.581-0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-19T19:00:34.585-0500] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: executing_python_etl_dag.Segementation scheduled__2024-12-19T00:00:00+00:00 [queued]>
+[2024-12-19T19:00:34.587-0500] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: executing_python_etl_dag.Segementation scheduled__2024-12-19T00:00:00+00:00 [queued]>
+[2024-12-19T19:00:34.587-0500] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-19T19:00:34.590-0500] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): Segementation> on 2024-12-19 00:00:00+00:00
+[2024-12-19T19:00:34.593-0500] {standard_task_runner.py:72} INFO - Started process 19791 to run task
+[2024-12-19T19:00:34.596-0500] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'executing_python_etl_dag', 'Segementation', 'scheduled__2024-12-19T00:00:00+00:00', '--job-id', '110', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/var/folders/jw/j912b4gd5xj0c7j8p3syth7r0000gn/T/tmpkcntr5wf']
+[2024-12-19T19:00:34.597-0500] {standard_task_runner.py:105} INFO - Job 110: Subtask Segementation
+[2024-12-19T19:00:34.613-0500] {task_command.py:467} INFO - Running <TaskInstance: executing_python_etl_dag.Segementation scheduled__2024-12-19T00:00:00+00:00 [running]> on host mac-4952.lan
+[2024-12-19T19:00:34.632-0500] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='venkatesh' AIRFLOW_CTX_DAG_ID='executing_python_etl_dag' AIRFLOW_CTX_TASK_ID='Segementation' AIRFLOW_CTX_EXECUTION_DATE='2024-12-19T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-19T00:00:00+00:00'
+[2024-12-19T19:00:34.632-0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-19T19:00:34.644-0500] {logging_mixin.py:190} WARNING - /Users/apple/airflow/dags/etl.py:87 FutureWarning: Passing literal json to 'read_json' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2024-12-19T19:00:34.659-0500] {logging_mixin.py:190} WARNING - /Users/apple/airflow/dags/etl.py:88 FutureWarning: Passing literal json to 'read_json' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2024-12-19T19:00:34.668-0500] {logging_mixin.py:190} INFO -    customer_id       customer_name  total_purchases  total_spent     segment
+0            1        Ryan Hubbard               10      5208.61     Premium
+1            2       Jason Sherman               15      8300.50     Premium
+2            3     Kimberly Howard               12      5845.09     Premium
+3            4  Christopher Warren               11      5594.66     Premium
+4            5      Valerie Taylor                5      1428.00  Occasional
+[2024-12-19T19:00:34.668-0500] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-19T19:00:34.670-0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-19T19:00:34.671-0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=executing_python_etl_dag, task_id=Segementation, run_id=scheduled__2024-12-19T00:00:00+00:00, execution_date=20241219T000000, start_date=20241220T000034, end_date=20241220T000034
+[2024-12-19T19:00:34.703-0500] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-19T19:00:34.709-0500] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-19T19:00:34.709-0500] {local_task_job_runner.py:245} INFO - ::endgroup::
